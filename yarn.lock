@@ -2896,7 +2896,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@cs-magic/eslint-config@workspace:packages/tools/eslint-config"
   dependencies:
-    "@cs-magic/prettier-config": "workspace:^"
+    "@cs-magic/prettier-config": "npm:*"
     "@trivago/prettier-plugin-sort-imports": "npm:^4.3.0"
     "@typescript-eslint/eslint-plugin": "npm:^6.0.0"
     "@typescript-eslint/parser": "npm:^6.0.0"
@@ -2910,7 +2910,7 @@ __metadata:
     prettier: "npm:^3.4.1"
     prettier-plugin-organize-imports: "npm:^4.1.0"
   peerDependencies:
-    eslint: ">=8.0.0"
+    eslint: ^8
     typescript: ">=4.0.0"
   languageName: unknown
   linkType: soft
@@ -3498,7 +3498,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@cs-magic/prettier-config@workspace:^, @cs-magic/prettier-config@workspace:packages/tools/prettier-config":
+"@cs-magic/prettier-config@npm:*, @cs-magic/prettier-config@workspace:^, @cs-magic/prettier-config@workspace:packages/tools/prettier-config":
   version: 0.0.0-use.local
   resolution: "@cs-magic/prettier-config@workspace:packages/tools/prettier-config"
   dependencies:

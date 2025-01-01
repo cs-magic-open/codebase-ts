@@ -1,6 +1,6 @@
 {
   "name": "@cs-magic/eslint-config",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Shared ESLint configurations for CS Magic projects",
   "exports": {
     ".": "./src/base.js",
@@ -19,11 +19,11 @@
     "src"
   ],
   "peerDependencies": {
-    "eslint": ">=8.0.0",
+    "eslint": "^8",
     "typescript": ">=4.0.0"
   },
   "dependencies": {
-    "@cs-magic/prettier-config": "workspace:^",
+    "@cs-magic/prettier-config": "*",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",

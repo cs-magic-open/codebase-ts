@@ -1,9 +1,5 @@
 
 
-[submodule "apps/exts_alfred_claude-search"]
-	path = apps/exts/alfred/claude-search
-	url = git@github.com:cs-magic/exts_alfred_claude-search.git
-
 [submodule "apps/exts_chrome_chatbot-exporter"]
 	path = apps/exts/chrome/chatbot-exporter
 	url = git@github.com:cs-magic/exts_chrome_chatbot-exporter.git
