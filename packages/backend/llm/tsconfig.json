@@ -9,6 +9,7 @@
     "tsBuildInfoFile": "dist/.tsbuildinfo",
     "rootDir": "src",
     "baseUrl": ".",
+    "emitDeclarationOnly": true,
     "paths": {
       "@/*": [
         "./src/*"

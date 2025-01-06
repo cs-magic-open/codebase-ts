@@ -8,6 +8,7 @@
     "outDir": "dist",
     "tsBuildInfoFile": "dist/.tsbuildinfo",
     "moduleResolution": "bundler",
+    "emitDeclarationOnly": true,
     "baseUrl": ".",
     "paths": {
       "@/*": [
