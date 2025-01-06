@@ -1,28 +1,25 @@
-"use client";
+"use client"
 
-import React, { useState } from "react";
+import React, { useState } from "react"
 
-import CustomDonationInput from "@/stripe/components/CustomDonationInput";
-import { CURRENCY, MAX_AMOUNT, MIN_AMOUNT , AMOUNT_STEP } from "@/stripe/config";
-import { createCheckoutSession } from "@/stripe/stripe.actions";
-import { formatAmountForDisplay } from "@/stripe/utils";
-
+import { AMOUNT_STEP, CURRENCY, MAX_AMOUNT, MIN_AMOUNT } from "../config"
+import { createCheckoutSession } from "../stripe.actions"
+import { formatAmountForDisplay } from "../utils"
+import CustomDonationInput from "./CustomDonationInput"
 
 export default function CheckoutForm(): JSX.Element {
-  const [loading] = useState<boolean>(false);
+  const [loading] = useState<boolean>(false)
   const [input, setInput] = useState<{
-    customDonation: number;
+    customDonation: number
   }>({
     customDonation: Math.round(MAX_AMOUNT / AMOUNT_STEP),
-  });
+  })
 
-  const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (
-    e,
-  ): void =>
+  const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (e): void =>
     setInput({
       ...input,
       [e.currentTarget.name]: e.currentTarget.value,
-    });
+    })
 
   return (
     <form action={createCheckoutSession}>
@@ -37,13 +34,9 @@ export default function CheckoutForm(): JSX.Element {
         onChange={handleInputChange}
       />
       {/* <StripeTestCards /> */}
-      <button
-        className="checkout-style-background"
-        disabled={loading}
-        type="submit"
-      >
+      <button className="checkout-style-background" disabled={loading} type="submit">
         Donate {formatAmountForDisplay(input.customDonation, CURRENCY)}
       </button>
     </form>
-  );
+  )
 }

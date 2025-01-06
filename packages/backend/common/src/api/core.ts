@@ -3,7 +3,7 @@
  */
 import axios, { type AxiosError, type AxiosResponse, type CreateAxiosDefaults } from "axios"
 
-import { logger } from "@/log"
+import { logger } from "../log"
 
 declare module "axios" {
   export interface AxiosRequestConfig {

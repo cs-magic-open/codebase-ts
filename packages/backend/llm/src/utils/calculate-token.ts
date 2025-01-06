@@ -2,8 +2,7 @@ import type { ILlmMessage } from "@cs-magic/common/schema/message"
 import { sum } from "lodash-es"
 import { encoding_for_model } from "tiktoken"
 
-
-import type { LlmModelType } from "@/schema/llm.models"
+import type { LlmModelType } from "../schema/llm.models"
 
 /**
  * @see:

@@ -1,4 +1,4 @@
-import { ERR_MSG_NotImplemented, ERR_MSG_Unexpected } from "@/const"
+import { ERR_MSG_NotImplemented, ERR_MSG_Unexpected } from "../const"
 
 export class UnexpectedError extends Error {
   constructor() {

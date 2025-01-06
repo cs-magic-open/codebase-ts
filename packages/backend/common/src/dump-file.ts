@@ -3,7 +3,7 @@
 import fs from "fs"
 import path from "path"
 
-import { formatAction } from "@/utils/format-action"
+import { formatAction } from "./utils/format-action"
 
 export const dumpFile = async (
   content: string | object, // type: "json" | "text" = "json",

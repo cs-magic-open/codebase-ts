@@ -1,3 +1,3 @@
-import { isServer } from "@/env/is-server"
+import { isServer } from "./is-server"
 
 export const isClient = !isServer

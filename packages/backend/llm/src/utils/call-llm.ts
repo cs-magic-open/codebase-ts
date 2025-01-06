@@ -4,9 +4,8 @@ import { md5 } from "js-md5"
 import OpenAI, { type ClientOptions } from "openai"
 import ZhipuAi from "zhipuai-sdk-nodejs-v4"
 
-
-import type { ILlmQueryConfig } from "@/schema/llm.api"
-import type { LlmProviderType } from "@/schema/llm.providers"
+import type { ILlmQueryConfig } from "../schema/llm.api"
+import type { LlmProviderType } from "../schema/llm.providers"
 
 export type ICompletion = OpenAI.Chat.Completions.ChatCompletion
 

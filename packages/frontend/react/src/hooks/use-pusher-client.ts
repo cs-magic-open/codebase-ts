@@ -5,7 +5,6 @@ import { sum } from "lodash-es"
 import type PusherJS from "pusher-js"
 import { useEffect, useRef } from "react"
 
-
 import {
   pusherClientAtom,
   pusherLastPingTimeAtom,
@@ -13,7 +12,7 @@ import {
   pusherLatenciesAtom,
   pusherLatencyAtom,
   pusherServerIdAtom,
-} from "@/store"
+} from "../store"
 
 export const usePusherClient = () => {
   const [serverId] = useAtom(pusherServerIdAtom)

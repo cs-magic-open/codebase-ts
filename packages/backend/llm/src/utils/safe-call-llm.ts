@@ -1,4 +1,3 @@
-
 import { SEPARATOR_BOX } from "@cs-magic/common/const"
 import { env } from "@cs-magic/common/env/get-env"
 import logger from "@cs-magic/common/log/index"
@@ -13,10 +12,10 @@ import {
   type ILlmQueryConfigExtra,
   type ILlmRes,
   defaultLlmQueryConfigExtra,
-} from "@/schema/llm.api"
-import { callLlm } from "@/utils/call-llm"
-import { formatLlmMessage } from "@/utils/format-llm-message"
-import { model2provider } from "@/utils/model2provider"
+} from "../schema/llm.api"
+import { callLlm } from "./call-llm"
+import { formatLlmMessage } from "./format-llm-message"
+import { model2provider } from "./model2provider"
 
 // logEnv("api_key")
 

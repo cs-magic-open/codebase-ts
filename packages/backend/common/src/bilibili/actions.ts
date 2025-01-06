@@ -1,7 +1,7 @@
-import { api } from "@/api/api"
-import type { IApiResult } from "@/api/schema"
-import type { IBilibiliVideoDetail } from "@/bilibili/schema"
-import { logger } from "@/log"
+import { api } from "../api/api"
+import type { IApiResult } from "../api/schema"
+import { logger } from "../log"
+import type { IBilibiliVideoDetail } from "./schema"
 
 export const getBilibiliSummary = async (bvid: string) => {
   const { data } = await api.get(

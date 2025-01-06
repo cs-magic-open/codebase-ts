@@ -9,10 +9,8 @@ import {
 } from "@cs-magic/shadcn/ui/select"
 import { Switch } from "@cs-magic/shadcn/ui/switch"
 import { type Atom, type PrimitiveAtom, useAtom } from "jotai"
-import React from "react"
 
-
-import { LabelLine } from "@/components/label-line"
+import { LabelLine } from "./label-line"
 
 /**
  * @param atom

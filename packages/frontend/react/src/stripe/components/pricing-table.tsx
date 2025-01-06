@@ -1,12 +1,9 @@
-import Head from "next/head";
-import { useSession } from "next-auth/react";
-import React from "react";
+import { useSession } from "next-auth/react"
+import Head from "next/head"
+import React from "react"
 
-import {
-  STRIPE_PRICING_TABLE_ID,
-  STRIPE_PUBLISHABLE_KEY,
-} from "@/stripe/config";
-import { encodeClientReferenceId } from "@/stripe/utils";
+import { STRIPE_PRICING_TABLE_ID, STRIPE_PUBLISHABLE_KEY } from "../config"
+import { encodeClientReferenceId } from "../utils"
 
 declare global {
   namespace JSX {
@@ -15,7 +12,7 @@ declare global {
       "stripe-pricing-table": React.DetailedHTMLProps<
         React.HTMLAttributes<HTMLElement>,
         HTMLElement
-      >;
+      >
     }
   }
 }
@@ -29,19 +26,19 @@ declare global {
  */
 function StripePricingTable() {
   // todo: get user id from useUserInDb()
-  const { data: session } = useSession();
-  const user = session?.user;
+  const { data: session } = useSession()
+  const user = session?.user
 
   if (!user) {
-    return <h1> You should login first to view the pricing table</h1>;
+    return <h1> You should login first to view the pricing table</h1>
   }
 
   if (!("id" in user && typeof user.id === "string")) {
-    return <h1>invalid user.id</h1>;
+    return <h1>invalid user.id</h1>
   }
 
-  const clientReferenceId = encodeClientReferenceId(user.id);
-  console.log({ clientReferenceId });
+  const clientReferenceId = encodeClientReferenceId(user.id)
+  console.log({ clientReferenceId })
 
   return (
     <>
@@ -56,7 +53,7 @@ function StripePricingTable() {
         publishable-key={STRIPE_PUBLISHABLE_KEY}
       />
     </>
-  );
+  )
 }
 
-export default StripePricingTable;
+export default StripePricingTable

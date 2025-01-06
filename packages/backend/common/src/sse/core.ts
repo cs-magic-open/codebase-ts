@@ -1,6 +1,6 @@
-import { logger } from "@/log"
-import type { TransEventType } from "@/sse/schema"
-import { formatError } from "@/utils/format-error"
+import { logger } from "../log"
+import { formatError } from "../utils/format-error"
+import type { TransEventType } from "./schema"
 
 export const fetchSSE = (
   requestUrl: string,

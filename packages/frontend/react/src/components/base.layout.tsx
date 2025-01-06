@@ -1,9 +1,8 @@
 import { Toaster } from "@cs-magic/shadcn/ui/sonner"
 import React from "react"
 
-
-import { GlobalProvider } from "@/components/global.provider"
-import { LoadingAlertDialog } from "@/components/loading"
+import { GlobalProvider } from "./global.provider"
+import { LoadingAlertDialog } from "./loading"
 
 export default function BaseLayout({ children }: { children: React.ReactNode }) {
   // console.log(ansiColors.red("== RootLayout =="))

@@ -1,7 +1,7 @@
-import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
+import { useRouter } from "next/router"
 
-import { DEFAULT_LOCALE_TYPE, LocaleNameSpace, LocaleType } from "@/locales"
+import { DEFAULT_LOCALE_TYPE, LocaleNameSpace, LocaleType } from "../locales"
 
 export const useLocale = () => {
   const { i18n } = useTranslation(LocaleNameSpace.manufacture)

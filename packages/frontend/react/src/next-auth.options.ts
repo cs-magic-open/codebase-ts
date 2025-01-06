@@ -9,9 +9,8 @@ import DiscordProvider from "next-auth/providers/discord"
 import GoogleProvider from "next-auth/providers/google"
 import type { Provider } from "next-auth/providers/index"
 
-
-import { ProfileUpdateProvider } from "@/next-auth-providers/profile-update"
-import { WechatProvider } from "@/next-auth-providers/wechat"
+import { ProfileUpdateProvider } from "./next-auth-providers/profile-update"
+import { WechatProvider } from "./next-auth-providers/wechat"
 
 const providers: Provider[] = [
   GoogleProvider({

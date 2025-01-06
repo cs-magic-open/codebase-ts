@@ -1,8 +1,8 @@
-import { sleep } from "@/datetime/utils"
-import { env } from "@/env"
-import logger from "@/log"
-import { type IUserSummaryFilled, UnexpectedError } from "@/schema"
-import { BaseSimulator } from "@/spider/base-simulator"
+import { sleep } from "../datetime/utils"
+import { env } from "../env"
+import logger from "../log"
+import { type IUserSummaryFilled, UnexpectedError } from "../schema"
+import { BaseSimulator } from "./base-simulator"
 
 /**
  * !IMPORTANT: 需要 assistant 项目启动

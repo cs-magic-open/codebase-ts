@@ -1,8 +1,7 @@
 import type { ILlmMessage } from "@cs-magic/common/schema/message"
 import type OpenAI from "openai"
 
-
-import type { LlmModelType } from "@/schema/llm.models"
+import type { LlmModelType } from "./llm.models"
 
 /**
  * 直接用于调用大模型的参数

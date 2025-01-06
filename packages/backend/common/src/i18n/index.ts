@@ -1,1 +1,1 @@
-export * from "@/i18n/schema"
+export * from "./schema"

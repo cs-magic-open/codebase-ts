@@ -3,11 +3,10 @@ import { cn } from "@cs-magic/shadcn/lib/utils"
 import { AspectRatio } from "@cs-magic/shadcn/ui/aspect-ratio"
 import { Check } from "lucide-react"
 import Image from "next/image"
-import React, { type HTMLAttributes } from "react"
+import { type HTMLAttributes } from "react"
 
-
-import { FlexContainer } from "@/components/flex-container"
-import { Loading } from "@/components/loading"
+import { FlexContainer } from "./flex-container"
+import { Loading } from "./loading"
 
 export const FileComp = ({
   file,

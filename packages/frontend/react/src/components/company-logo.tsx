@@ -3,7 +3,7 @@ import CsMagicBlackLogoSvg from "@assets/branding/neurora/neurora_logo_black_tra
 import clsx from "clsx"
 import type { HTMLProps } from "react"
 
-import { LOGO_SIZE_LG } from "@/config"
+import { LOGO_SIZE_LG } from "../config"
 
 export const CompanyLogo = ({ className, ...props }: HTMLProps<SVGSVGElement>) => (
   <CsMagicBlackLogoSvg

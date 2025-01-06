@@ -2,10 +2,10 @@ import logger from "@cs-magic/common/log/index"
 import type { ILlmMessage } from "@cs-magic/common/schema/message"
 import { compressContent } from "@cs-magic/common/utils/compress-content"
 
-import type { ILlmQueryConfig } from "@/schema/llm.api"
-import type { LlmModelType } from "@/schema/llm.models"
-import { loadAgent } from "@/utils/load-agent"
-import { safeCallLLM } from "@/utils/safe-call-llm"
+import type { ILlmQueryConfig } from "../schema/llm.api"
+import type { LlmModelType } from "../schema/llm.models"
+import { loadAgent } from "./load-agent"
+import { safeCallLLM } from "./safe-call-llm"
 
 // const __filename = fileURLToPath(import.meta.url)
 
