@@ -4,6 +4,7 @@
   ],
   "compilerOptions": {
     "composite": true,
+    "incremental": true,
     "rootDir": "src",
     "outDir": "dist",
     "tsBuildInfoFile": "dist/.tsbuildinfo",
@@ -19,9 +20,5 @@
   "include": [
     "./src/**/*",
     "./src/**/*.json"
-  ],
-  "references": [
-    {
-    }
   ]
 }

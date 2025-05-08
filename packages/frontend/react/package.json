@@ -9,7 +9,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "copyfiles -u1 src/**/*.{css,svg} dist && tsc -b",
+    "build": "yarn clean && ts-patch install -s && copyfiles -u1 src/**/*.{css,svg} dist && tsc -b",
     "prepublishOnly": "yarn build"
   },
   "files": [
@@ -96,10 +96,11 @@
     "prisma": "*",
     "react-responsive-masonry": "^2.3.0",
     "react-scroll-to-bottom": "^4.2.0",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.7",
-    "ts-patch": "^3.2.1",
+    "ts-patch": "^3.3.0",
     "typescript": "*",
-    "typescript-transform-paths": "^3.5.2",
+    "typescript-transform-paths": "^3.5.5",
     "vite": "^5.4.2"
   }
 }
